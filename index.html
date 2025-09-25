@@ -4,67 +4,128 @@
   <meta charset="UTF-8">
   <title>Meine Foto-Website</title>
   <style>
+    /* Allgemein */
     body {
       font-family: Arial, sans-serif;
-      background: #f8f8f8;
       margin: 0;
       padding: 0;
+      background: linear-gradient(125deg, rgba(0,0,0,1) 0%, rgba(248,224,104,1) 100%);
+      color: white;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+      color: #f8e068;
+    }
+
+    /* Über mich */
+    .about {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: rgba(0,0,0,0.6);
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
       text-align: center;
     }
-    header {
-      background: #222;
-      color: white;
-      padding: 20px 0;
+
+    .about h2 {
+      margin-top: 0;
+      color: #f8e068;
     }
-    h1 {
-      margin: 0;
-    }
+
+    /* Galerie */
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 10px;
-      padding: 20px;
-      max-width: 1000px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+      max-width: 1200px;
       margin: auto;
     }
+
     .gallery img {
       width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
     }
-    footer {
-      background: #222;
-      color: white;
-      padding: 20px;
-      margin-top: 30px;
-    }
-  <!-- HIER KOMMT DEIN NEUER TEXT -->
-  <main style="text-align:center; color:white; margin: 30px auto; max-width:600px;">
-    <h2>Hey, ich bin Tobias!</h2>
-    <p>
-      Ich bin 16, komme aus Uruguay und lebe jetzt in Deutschland. 
-      Ich liebe es, Fotos von allem Möglichen zu machen – Vögel, Menschen, Momente.  
-      Wenn du Lust hast, dass ich Fotos für dich mache, schreib mir einfach!
-    <p>
-  </main>
 
-    <p>
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0,0,0,0.8);
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+
+    footer a {
+      color: #f8e068;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>📸 EN_FOTO_CATE-Tobias Benito Epp</h1>
-    <p>Willkommen auf meiner Website!</p>
-  </header>
-  <footer>
-    <p>📧 <a href="enfotocate@gmail.com" style="color:white;">enfotocate@gmail.com</a></p>
-    <p>© 2025 Tobias Benito Epp</p>
-    <p>Instagram:@enfotocate</p>
-    <p>Tel.Nr:+598 98 660 069</p>
-  </footer>
-</body>
 
-</html
+  <!-- Kopfbereich -->
+  <header>
+    <h1>📸 en_Foto_cate – Tobias Benito Epp</h1>
+    <p>Momente einfangen, die bleiben</p>
+  </header>
+
+  <!-- Über mich -->
+  <section class="about">
+    <h2>Über mich</h2>
+    <p>
+      Hey, ich bin Tobias, 16 Jahre alt, geboren in Uruguay und jetzt in Deutschland.  
+      Fotografie ist für mich nicht nur ein Hobby, sondern eine Leidenschaft.  
+      Ob Vögel, Menschen oder besondere Momente – ich halte alles gerne mit meiner Kamera fest.  
+    </p>
+    <p>
+      Wenn du Lust auf ein Shooting hast oder einfach meine Arbeit sehen willst,  
+      melde dich bei mir über Instagram oder E-Mail!
+    </p>
+  </section>
+
+  <!-- Galerie -->
+  <section class="gallery">
+    <!-- Deine Bilder hier einfügen -->
+    <img src="WhatsApp Bild 2025-09-18 um 23.27.16_472238b6.jpg" alt="Selbstporträt">
+    <img src="bild2.jpg" alt="Foto 2">
+    <img src="bild3.jpg" alt="Foto 3">
+    <img src="bild4.jpg" alt="Foto 4">
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>📧 <a href="mailto:enfotocate@gmail.com">enfotocate@gmail.com</a></p>
+    <p>📷 <a href="https://www.instagram.com/en_foto_cate?igsh=MWFjZmphbnF0eG1ueQ==" target="_blank">@enfotocate</a></p>
+    <p>© 2025 Tobias Benito Epp</p>
+  </footer>
+
+</body>
+</html>
 
 
 
